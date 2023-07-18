@@ -54,7 +54,7 @@ RUN echo 'echo "nameserver 127.0.0.1" > /tmp/resolv.add' >> /services.sh
 RUN echo 'cat /tmp/resolv.add /tmp/resolv.ori > /etc/resolv.conf' >> /services.sh
 RUN echo '/etc/init.d/bind9 restart' >> /services.sh
 RUN echo '/etc/init.d/rsyslog restart' >> /services.sh
-#RUN echo '/etc/init.d/zimbra restart' >> /services.sh
+RUN echo '/etc/init.d/zimbra restart' >> /services.sh
 RUN chmod +x /services.sh
 
 # Entrypoint
