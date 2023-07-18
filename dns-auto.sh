@@ -1,3 +1,4 @@
+# Update Ubuntu 20.04
 # Configuring DNS Server
 echo ""
 echo -e "[INFO] : Configuring DNS Server"
